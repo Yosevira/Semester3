@@ -1,0 +1,70 @@
+body{
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    margin: auto;
+    background-color: white;
+}
+.header h1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+.header ul li{
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+.header ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.header ul li a:hover{
+    text-decoration: underline;
+}
+.cover{
+    height: 300px;
+    width: 500;
+    background-image: url(gamelan.jpg);
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.content h1{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.content h4{
+    margin-left: 20px;
+}
+.cover-content p{
+    display: flex;
+    text-align: center;
+}
+.teks p{
+    margin-left: 20px;
+    margin-left: 20px;
+}
+.footer{
+    background-color: darkgray;
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+}
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+}
+#copyright{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
