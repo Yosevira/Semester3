@@ -26,6 +26,7 @@ body{
 .cover{
     height: 500px;
     width: 750px;
+    margin-top: 30px;
     margin-bottom: 30px;
     transform: translate(300px);
     background-image: url(foto/candi.jpg)
