@@ -1,10 +1,10 @@
 var tombolMenu =document.getElementByClassName('tombol-menu')[0];
 var menu= document.getElementByClassName('menu')[0];
 
-tombolMenu.oncliclk = function(){
+tombolMenu.onclick = function(){
     menu.classList.toggle(active);
 }
 
-menu.oncliclk = function(){
+menu.onclick = function(){
     menu.classList.toggle('active')
 }
