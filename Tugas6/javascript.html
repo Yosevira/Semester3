@@ -1,0 +1,46 @@
+<doctype! html>
+    <html lang="id">
+        <head>
+            <meta charset="UTF.8">
+            <meta name="viewport"
+                content="width=device-width, initial-scale-1.0">
+            <title>Contoh Implementasi JavaScript</title>
+            <style>
+                body{
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                #message{
+                    margin-top: 20px;
+                    font-weight: bold;
+                    color: green;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Selamat datang di Halaman JavaScript</h1>
+            <p>Masukkan nama Anda:</p>
+            <input type="text" id="namaInput" placeholder="Nama Anda">
+            <button id="greetButton">Sapa Saya!</button>
+
+            <div id="message"></div>
+
+            <script>
+                //mengambil elemen dari DOM
+                const greetButton = document.getElementById("greetButton");
+                const namaInput = document.getElementById("namaInput");
+                const messageDiv = document.getElementById("message");
+
+                //menambahkan event listener ke tombol
+                greetButton.addEventListener("click",function(){
+                    //mengambil nilai dari input
+                    const nama = namaInput.value;
+                    if (nama){
+                        //menampilkan pesan sapaan
+                        messageDiv.innerText = "Halo, " + nama + "! Selamat Datang!";
+                    } else {
+                        messageDiv.innerText = "Silahkan Masukkan Nama Anda"
+                    }
+                });
+            </script>
+        </body>
+    </html>
