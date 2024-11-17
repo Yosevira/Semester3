@@ -75,7 +75,7 @@
     ?>
 
     <h1>Tugas 8 Percabangan</h1>
-    <h2>Percabangan If/Else</h2>
+    <h2>Percabangan If</h2>
     <div>
         <form method="post" action="">
             <label for="nilai">Masukkan nilai Matematika Anda (0-100):</label>
@@ -90,9 +90,7 @@
 
         if ($nilai >= 70) {
             echo "Selamat! Anda lulus!!";
-        } else {
-            echo "Maaf, Anda tidak lulus!!";
-        }
+        } 
     }
     ?>
 
@@ -106,7 +104,7 @@
     </div>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] = "POST") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $nilai = (int)$_POST['nilai'];
 
         if ($nilai >= 90) {
