@@ -1,6 +1,4 @@
-<?php 
-$konek = mysqli_connect("localhost","root","", "sekolahan");
-?>
+<?php $konek=mysqli_connect("localhost","root","", "sekolahan" ); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +16,7 @@ $konek = mysqli_connect("localhost","root","", "sekolahan");
             <td>No</td>
             <td>Nama Siswa</td>
             <td>Alamat</td>
+            <td>Jenis Kelamin</td>
             <td>Agama</td>
             <td>Asal Sekolah</td>
             <td>Aksi</td>
@@ -33,10 +32,11 @@ $konek = mysqli_connect("localhost","root","", "sekolahan");
             <td><?php echo $no ++;?></td>
             <td><?php echo $data ['nama_siswa'];?></td>
             <td><?php echo $data ['alamat_siswa'];?></td>
+            <td><?php echo $data ['jk_siswa'];?></td>
             <td><?php echo $data ['agama_siswa'];?></td>
             <td><?php echo $data ['asal_sekolah'];?></td>
             <td>
-                <a href="">Edit</a> <a href="">Hapus</a>
+                <a href="">Edit</a> <a href="hapus.php">Hapus</a>
             </td>
         </tr>
 
