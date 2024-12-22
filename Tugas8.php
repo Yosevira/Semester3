@@ -45,7 +45,7 @@
         $grade = "B";
     } elseif ($nilai > 60){
         $grade = "C";
-    } elseif (nilai > 40){
+    } elseif ($nilai > 40){
         $grade = "D";
     } elseif ($nilai > 30){
         $grade = "E";
